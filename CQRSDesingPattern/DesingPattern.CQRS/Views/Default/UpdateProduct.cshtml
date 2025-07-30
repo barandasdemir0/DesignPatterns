@@ -1,0 +1,32 @@
+﻿@model DesingPattern.CQRS.CQRSPattern.Results.GetProductUpdateQueryResult
+@{
+    Layout = null;
+}
+
+<a href="~/lib/bootstrap/dist/css/bootstrap.css.map"></a>
+<a href="~/lib/bootstrap/dist/css/bootstrap.min.css.map"></a>
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+<div class="container">
+    <br />
+    <form method="post">
+        <label>Ürün id</label>
+        <input type="text" class="form-control" asp-for="ProductID"  />
+        <br />
+        <label>Ürün Adı</label>
+        <input type="text" class="form-control" asp-for="Name"  />
+        <br />
+        <label>Ürün Stok Sayısı</label>
+        <input type="text" class="form-control" asp-for="stock"  />
+        <br />
+        <label>Ürün Fiyatı</label>
+        <input type="text" class="form-control" asp-for="Price"  />
+        <br />
+        <label>Ürün Açıklama</label>
+        <input type="text" class="form-control" asp-for="Description"  />
+        <br />
+        <button class="btn btn btn-outline-info">Güncelle</button>
+    </form>
+
+</div>
