@@ -1,0 +1,19 @@
+﻿@model DesingPattern.EntityLayerRepository.Concrete.Category
+@{
+    Layout = null;
+}
+
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+
+<div class="container">
+    <br />
+    <form method="post">
+        <label>Kategori Adı</label>
+        <input type="text" class="form-control" asp-for="CategoryName" />
+        <br />
+        <button class="btn btn-outline-success">Ekle</button>
+    </form>
+
+</div>

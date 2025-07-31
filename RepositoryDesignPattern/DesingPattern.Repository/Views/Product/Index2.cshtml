@@ -1,0 +1,36 @@
+﻿@model List<DesingPattern.EntityLayerRepository.Concrete.Product>
+@{
+    Layout = null;
+}
+
+
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<div class="container">
+    <br />
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Adı</th>
+            <th>Stok</th>
+            <th>Fiyatı</th>
+            <th>Kategorisi</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProductID</td>
+                <td>@item.ProductName</td>
+                <td>@item.ProductStock</td>
+                <td>@item.ProductPrice</td>
+                <td>@item.Category.CategoryName</td>
+                <td><a href="/Product/ProductDelete/@item.ProductID" class="btn btn-outline-danger">Sil</a></td>
+                <td><a href="/Product/ProductUpdate/@item.ProductID" class="btn btn-outline-warning">Güncelle</a></td>
+
+            </tr>
+        }
+    </table>
+    <a href="/Product/ProductAdd/" class="btn btn-outline-primary">Ekle</a>
+</div>

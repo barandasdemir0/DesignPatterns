@@ -1,0 +1,30 @@
+﻿@model List<DesingPattern.EntityLayerRepository.Concrete.Category>
+@{
+    Layout = null;
+}
+
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+<div class="container">
+    <br />
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Kategori Adı</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CategoryID</td>
+                <td>@item.CategoryName</td>
+                <td><a href="/Category/CategoryDelete/@item.CategoryID" class="btn btn-outline-danger">Sil</a></td>
+                <td><a href="/Category/CategoryUpdate/@item.CategoryID" class="btn btn-outline-warning">Güncelle</a></td>
+
+            </tr>
+        }
+    </table>
+    <a href="/Category/CategoryAdd/" class="btn btn-outline-primary">Ekle</a>
+</div>
