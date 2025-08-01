@@ -39,6 +39,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesingPattern.DataAccessLay
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.BusinessLayerRepository", "RepositoryDesignPattern\DesignPattern.BusinessLayerRepository\DesignPattern.BusinessLayerRepository.csproj", "{1FE40A54-8919-4A38-80C8-B8CB3E5ABBD9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompositeDesingPattern", "CompositeDesingPattern", "{25081256-3B34-40B9-AEEC-E5ED2DA84C24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesingPattern.Composite", "CompositeDesingPattern\DesingPattern.Composite\DesingPattern.Composite.csproj", "{8683479D-1FBF-432A-9B92-C51006C570A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,10 @@ Global
 		{1FE40A54-8919-4A38-80C8-B8CB3E5ABBD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FE40A54-8919-4A38-80C8-B8CB3E5ABBD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FE40A54-8919-4A38-80C8-B8CB3E5ABBD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8683479D-1FBF-432A-9B92-C51006C570A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8683479D-1FBF-432A-9B92-C51006C570A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8683479D-1FBF-432A-9B92-C51006C570A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8683479D-1FBF-432A-9B92-C51006C570A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -110,6 +118,7 @@ Global
 		{88EAA513-7E88-4332-825B-DEF4808BAB1C} = {CA9DFF75-DDE4-4201-B31E-4417B8A036A0}
 		{4B9953E0-00F9-4A4D-8D3C-E6C6BC063EFD} = {CA9DFF75-DDE4-4201-B31E-4417B8A036A0}
 		{1FE40A54-8919-4A38-80C8-B8CB3E5ABBD9} = {CA9DFF75-DDE4-4201-B31E-4417B8A036A0}
+		{8683479D-1FBF-432A-9B92-C51006C570A4} = {25081256-3B34-40B9-AEEC-E5ED2DA84C24}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D24A40BA-9366-4937-B21D-E80E1CCEF976}
