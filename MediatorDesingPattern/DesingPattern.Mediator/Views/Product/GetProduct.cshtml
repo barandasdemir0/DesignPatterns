@@ -1,0 +1,25 @@
+﻿@model DesingPattern.Mediator.Results.GetProductByIDQueryResult
+@{
+    Layout = null;
+}
+
+
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+
+<div class="container">
+    <br />
+    <label>Ürün Id</label>
+    <input type="text" class="form-control" asp-for="ProductID" readonly> 
+    <br />
+    <label>Ürün Adı</label>
+    <input type="text" class="form-control" asp-for="ProductName" readonly> 
+    <br />
+    <label>Ürün stok</label>
+    <input type="text" class="form-control" asp-for="ProductStock" readonly> 
+    <br />
+ 
+
+</div>
