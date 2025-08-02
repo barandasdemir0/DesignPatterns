@@ -34,9 +34,10 @@ Bu notlar, tasarım desenlerini sadece ezberlemek değil, günlük projelerde **
 🗓️ Tarih: Ağustos 2025
 
 
-NOTLAR
 
 [Design Patternlar.docx](https://github.com/user-attachments/files/21559570/Design.Patternlar.docx)
+NOTLAR
+
 <img width="631" height="767" alt="3" src="https://github.com/user-attachments/assets/50e9bc40-99b0-4baf-b9e0-1d4b06f8923d" />
 <img width="632" height="772" alt="2" src="https://github.com/user-attachments/assets/dc6e9561-29cf-4690-8b5d-79de4dfc15c2" />
 <img width="606" height="797" alt="1" src="https://github.com/user-attachments/assets/64c3cc7b-a10f-4f5b-adf2-a52990465fe8" />
