@@ -1,0 +1,31 @@
+﻿@model List< DesingPattern.Facade.DAL.Customer>
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+
+<div class="container">
+    <br />
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Müşteri Adı</th>
+            <th>Müşteri Soyadı</th>
+            <th>Müşteri Şehir</th>
+        </tr>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.CustomerID</td>
+                <td>@item.CustomerName</td>
+                <td>@item.CustomerSurname</td>
+                <td>@item.CustomerCity</td>
+            </tr>
+        }
+    </table>
+    <a href="/Default/AddNewCustomer/" class="btn btn-outline-primary">Yeni Müşteri Girişi</a>
+</div>
+

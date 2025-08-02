@@ -1,0 +1,33 @@
+﻿@model List< DesingPattern.Facade.DAL.Product>
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+
+<div class="container">
+    <br />
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Ürün Adı</th>
+            <th>Ürün stok</th>
+            <th>Ürün fiyat</th>
+            <th>Ürün Kategori</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProductID</td>
+                <td>@item.ProductName</td>
+                <td>@item.Stock</td>
+                <td>@item.ProductPrice</td>
+                <td>@item.ProductCategory</td>
+            </tr>
+        }
+    </table>
+    <a href="/Default/AddProductCustomer/" class="btn btn-outline-primary">Yeni Ürün Girişi</a>
+</div>
+

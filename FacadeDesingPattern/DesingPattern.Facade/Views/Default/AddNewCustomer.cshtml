@@ -1,0 +1,28 @@
+﻿@model DesingPattern.Facade.DAL.Customer
+@{
+    Layout = null;
+}
+
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+
+<div class="container">
+    <br />
+    <form method="post">
+        <label>Müşteri Adı</label>
+        <input type="text" class="form-control" asp-for="CustomerName" />
+        <br />
+        <label>Müşteri SoyAdı</label>
+        <input type="text" class="form-control" asp-for="CustomerSurname" />
+        <br />
+        <label>Müşteri Adresi</label>
+        <input type="text" class="form-control" asp-for="CustomerAdress" />
+        <br />
+        <label>Müşteri Şehri</label>
+        <input type="text" class="form-control" asp-for="CustomerCity" />
+        <br />
+        <button class="btn btn-outline-info">Ekle</button>
+    </form>
+</div>

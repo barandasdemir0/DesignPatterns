@@ -1,0 +1,32 @@
+﻿@model DesingPattern.Facade.DAL.OrderDetail
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+
+<div class="container">
+    <br />
+    <form method="post">
+        <label>Müşteri ID</label>
+        <input type="text" class="form-control" asp-for="CustomerID" />
+        <br />
+        <label>Ürün ID</label>
+        <input type="text" class="form-control" asp-for="ProductID" />
+        <br />
+        <label>Sipariş ID</label>
+        <input type="text" class="form-control" asp-for="OrderID" />
+        <br />
+
+        <label>Ürün Fiyatı </label>
+        <input type="text" class="form-control" asp-for="ProductPrice" />
+        <br />
+        <label>Ürün Adedi</label>
+        <input type="text" class="form-control" asp-for="ProductTotalPrice" />
+        <br />
+       
+        <button class="btn btn-outline-info">Ekle</button>
+    </form>
+</div>

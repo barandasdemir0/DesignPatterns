@@ -1,0 +1,37 @@
+﻿@model List< DesingPattern.Facade.DAL.OrderDetail>
+@{
+    Layout = null;
+}
+
+
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+
+<div class="container">
+    <br />
+    <table class="table table-bordered">
+        <tr>
+
+            <th>Müşteri ID</th>
+            <th>Ürün ID</th>
+            <th>Sipariş  ID</th>
+            <th>Ürün Fiyatı</th>
+            <th>Ürün Adedi</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CustomerID</td>
+                <td>@item.OrderID</td>
+                <td>@item.ProductID</td>
+                <td>@item.ProductCount</td>
+                <td>@item.ProductPrice</td>
+
+            </tr>
+        }
+    </table>
+    <a href="/Default/OrderStart/" class="btn btn-outline-primary">Yeni  Giriş</a>
+</div>
+

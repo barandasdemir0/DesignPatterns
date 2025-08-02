@@ -1,0 +1,21 @@
+﻿@model DesingPattern.Facade.DAL.Order
+@{
+    Layout = null;
+}
+
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+
+<div class="container">
+    <br />
+    <form method="post">
+        <label>Müşteri ID</label>
+        <input type="text" class="form-control" asp-for="CustomerID" />
+        <br />
+    
+
+        <button class="btn btn-outline-info">Ekle</button>
+    </form>
+</div>
